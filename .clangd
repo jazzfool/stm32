@@ -1,0 +1,2 @@
+CompileFlags:
+	Remove: [-mcpu=cortex-m7]
