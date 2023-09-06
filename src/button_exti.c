@@ -12,7 +12,7 @@
 
 void EXTI15_10_IRQHandler(void)
 {
-    if ((EXTI->PR & EXTI_PR_PR13)) {
+    if (EXTI->PR & EXTI_PR_PR13) {
         /* is B1 pressed? */
         if (GPIOC->IDR & (1 << 13)) {
             /* turn on LD1 */
