@@ -1,7 +1,7 @@
 #ifndef HAL2_RCC_H
 #define HAL2_RCC_H
 
-#include <inttypes.h>
+#include <stdint.h>
 
 struct rcc {
     volatile uint32_t
@@ -44,6 +44,6 @@ struct rcc {
         DCKCFGR2;
 };
 
-#define RCC ((struct rcc*)(0x40023800))
+#define RCC ((struct rcc*)(0x40023800ul))
 
 #endif

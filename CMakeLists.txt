@@ -81,4 +81,4 @@ function(add_program PROGRAM_NAME FILES)
 endfunction()
 
 add_program(blink "src/blink.c")
-#add_program(button-exti "src/button_exti.c")
+add_program(button-exti "src/button_exti.c")

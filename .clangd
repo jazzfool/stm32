@@ -1,2 +1,2 @@
 CompileFlags:
-	Remove: [-mcpu=cortex-m7]
+	Remove: [-mcpu=cortex-m7,-fno-tree-loop-distribute-patterns]
